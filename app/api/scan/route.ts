@@ -16,7 +16,7 @@ type PageSpeedResponse = {
   };
 };
 
-export const runtime = "edge";
+export const runtime = "nodejs";
 export const dynamic = "force-dynamic";
 
 const MAX_HTML_BYTES = 1_500_000;
