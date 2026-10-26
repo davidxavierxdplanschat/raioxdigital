@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="public/brand/raio-x-digital-logo.png" alt="Logo Raio-X Digital" width="620" />
+</p>
+
 # Raio-X Digital
 
 > Scanner de sites desenvolvido por **David Xavier** e **Ingrid Lira** para transformar dados técnicos em oportunidades reais de melhoria e novos negócios.

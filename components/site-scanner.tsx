@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import {
   Activity, AlertTriangle, ArrowDown, ArrowRight, Braces, Check, CheckCircle2,
   CircleX, Copy, Gauge, Globe2, Layers3, LoaderCircle,
@@ -242,7 +243,7 @@ export function SiteScanner() {
     <main>
       <div className="noise" aria-hidden="true" />
       <header className="topbar">
-        <a href="#inicio" className="logo" aria-label="Raio-X Digital — início"><span><Search /></span><b>RAIO-X</b><i>DIGITAL</i><code>v2.0</code></a>
+        <a href="#inicio" className="logo" aria-label="Raio-X Digital — início"><Image className="brand-logo" src="/brand/raio-x-digital-logo.png" alt="Raio-X Digital" width={180} height={60} priority /><code>v2.0</code></a>
         <nav aria-label="Navegação principal"><a href="#scanner">Scanner</a><a href="#stack">Como funciona</a><a href="#devs">Devs</a></nav>
         <a href="#scanner" className="topbar-cta"><span /> iniciar scan</a>
       </header>
@@ -308,7 +309,7 @@ export function SiteScanner() {
         </>
       )}
 
-      <footer><a href="#inicio" className="logo"><span><Search /></span><b>RAIO-X</b><i>DIGITAL</i></a><p>Construído por <strong>David Xavier</strong> × <strong>Ingrid Lira</strong></p><code>© {new Date().getFullYear()} · build with intent</code></footer>
+      <footer><a href="#inicio" className="logo"><Image className="brand-logo" src="/brand/raio-x-digital-logo.png" alt="Raio-X Digital" width={180} height={60} /></a><p>Construído por <strong>David Xavier</strong> × <strong>Ingrid Lira</strong></p><code>© {new Date().getFullYear()} · build with intent</code></footer>
     </main>
   );
 }

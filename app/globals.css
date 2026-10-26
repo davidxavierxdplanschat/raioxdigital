@@ -177,11 +177,8 @@ button { cursor: pointer; }
 @keyframes float { 50% { transform: translateY(-8px); } }
 
 .topbar { position: absolute; top: 0; left: 50%; z-index: 20; width: min(1240px, calc(100% - 40px)); height: 86px; transform: translateX(-50%); display: flex; align-items: center; justify-content: space-between; gap: 2rem; border-bottom: 1px solid rgba(190, 118, 255, .12); }
-.logo { display: flex; align-items: center; gap: .15rem; text-decoration: none; font-family: var(--font-code); letter-spacing: -.04em; }
-.logo > span { width: 37px; height: 37px; margin-right: .65rem; display: grid; place-items: center; border: 1px solid rgba(192,38,255,.5); border-radius: 10px; background: #10071c; box-shadow: inset 0 0 16px rgba(192,38,255,.18), 0 0 18px rgba(192,38,255,.15); }
-.logo > span svg { width: 19px; color: var(--rx-purple-strong); }
-.logo b { font-size: 1rem; color: #fff; }
-.logo i { color: var(--rx-purple-strong); font-size: 1rem; font-style: normal; font-weight: 800; }
+.logo { display: flex; align-items: center; gap: .15rem; text-decoration: none; font-family: var(--font-code); }
+.brand-logo { width: 180px; height: auto; object-fit: contain; filter: drop-shadow(0 0 12px rgba(168, 85, 247, .24)); }
 .logo code { margin-left: .6rem; color: #6e6279; font-size: .58rem; }
 .topbar nav { display: flex; gap: 2.2rem; }
 .topbar nav a { color: #94879f; text-decoration: none; font: 600 .72rem var(--font-code); text-transform: uppercase; letter-spacing: .09em; transition: .2s; }
@@ -379,7 +376,7 @@ footer p { margin: 0; font-size: .7rem; } footer strong { color: #a998b5; } foot
 }
 
 @media (max-width: 680px) {
-  .topbar { width: calc(100% - 28px); height: 72px; }.topbar-cta { display: none; }.logo code { display: none; }
+  .topbar { width: calc(100% - 28px); height: 72px; }.topbar-cta { display: none; }.logo code { display: none; }.brand-logo { width: 146px; }
   .hero { min-height: 840px; padding: 120px 14px 70px; }.hero h1 { font-size: clamp(3rem, 14vw, 4.6rem); }.hero__eyebrow i { display: none; }
   .scanner-shell { border-radius: 11px; }.scan-form { padding: 1.1rem; }.url-field { grid-template-columns: auto 1fr; padding: .5rem; }.url-field > span { display: none; }.url-field > svg { margin: 0 .65rem; }.url-field input { height: 50px; }.url-field button { grid-column: 1/-1; min-height: 48px; margin: .35rem 0 0; }.scan-meta { gap: .7rem 1rem; }
   .stage-list { grid-template-columns: 1fr; }.scanner-loader { padding: 1.5rem 1rem; }
