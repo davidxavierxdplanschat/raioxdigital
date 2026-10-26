@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://raio-x-digital-david-ingrid.keenbead17.chatgpt.site/sitemap.xml
